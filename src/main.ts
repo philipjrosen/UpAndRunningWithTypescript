@@ -1,10 +1,8 @@
-import { Two } from './two';
-new Two();
+import { SocialNetwork } from './social-network';
 
-class App {
-  constructor() {
-    console.log('working');
+class App implements SocialNetwork {
+  title = "Egghead";
+  getUsers() {
+    return [{name: "Philip"}];
   }
 }
-
-new App();

@@ -1,10 +1,10 @@
 "use strict";
-var two_1 = require("./two");
-new two_1.Two();
 var App = (function () {
     function App() {
-        console.log('working');
+        this.title = "Egghead";
     }
+    App.prototype.getUsers = function () {
+        return [{ name: "Philip" }];
+    };
     return App;
 }());
-new App();
