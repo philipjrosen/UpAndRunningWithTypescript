@@ -1,8 +1,10 @@
 "use strict";
-require("./two");
+var two_1 = require("./two");
+new two_1.Two();
 var App = (function () {
     function App() {
-        this.name = 'John Lennon';
+        console.log('working');
     }
     return App;
 }());
+new App();

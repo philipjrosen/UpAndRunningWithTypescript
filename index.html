@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://unpkg.com/systemjs@0.20.5/dist/system.js"></script>
+</head>
+<body>
+    <h1>Hey Hey</h1>
+    <script>
+        System.config({
+            packages: {
+                "dist": {
+                    "defaultExtension": "js",
+                    "main": "main"
+                }
+            }
+        });
+        System.import("dist");
+    </script>
+</body>
+</html>
